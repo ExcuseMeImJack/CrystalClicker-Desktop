@@ -1,5 +1,5 @@
 {
-  "main": "public/electron.js",
+  "main": "src/electron.js",
   "scripts": {
     "start": "react-scripts start",
     "electron": "electron .",
@@ -10,6 +10,8 @@
     "electron-builder": "^25.1.8"
   },
   "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "react-scripts": "^5.0.1"
   },
   "browserslist": {
@@ -25,16 +27,16 @@
     ]
   },
   "build": {
-  "appId": "com.myapp.desktop",
-  "productName": "My Game",
-  "files": [
-    "**/*"
-  ],
-  "mac": {
-    "category": "public.app-category.games"
-  },
-  "win": {
-    "target": "nsis"
+    "appId": "com.myapp.desktop",
+    "productName": "My Game",
+    "files": [
+      "**/*"
+    ],
+    "mac": {
+      "category": "public.app-category.games"
+    },
+    "win": {
+      "target": "nsis"
+    }
   }
-}
 }
